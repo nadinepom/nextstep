@@ -1,0 +1,153 @@
+{
+  "common": {
+    "brandName": "NextStep",
+    "appName": "NextStep - Daily Planner"
+  },
+  "home": {
+    "title": "Heute",
+    "subtitle": "Dein Fokus für den Tag beginnt jetzt.",
+    "tagline": "Kleine Schritte. Klare Tage.",
+    "dateAccessibility": "Heute ist {{date}}",
+    "greeting": {
+      "morning": "Guten Morgen",
+      "afternoon": "Guten Nachmittag",
+      "evening": "Guten Abend",
+      "night": "Gute Nacht"
+    },
+    "sections": {
+      "focus": "TÄGLICHER FOKUS",
+      "tasks": "AUFGABEN",
+      "tasksWithProgress": "AUFGABEN · {{done}}/{{total}} erledigt",
+      "energy": "DEINE ENERGIE",
+      "progress": "FORTSCHRITT"
+    },
+    "focusCard": {
+      "label": "Fokus",
+      "placeholder": "Was ist dein Hauptziel heute?",
+      "emptyPlaceholder": "Was ist dein wichtigstes Ziel heute?",
+      "editLabel": "Bearbeiten",
+      "emptyAccessibility": "Fokus für heute. Tippen zum Setzen.",
+      "filledAccessibility": "Fokus: {{focus}}. Tippen zum Bearbeiten.",
+      "editAccessibilityLabel": "Fokus bearbeiten",
+      "accessibilityLabel": "Fokuskarte für heute",
+      "accessibilityHint": "Tippen zum Bearbeiten deines Fokusziels"
+    },
+    "taskList": {
+      "label": "Aufgaben",
+      "placeholder": "Maximal 3 Aufgaben...",
+      "emptyHint": "Bis zu 3 Aufgaben für heute hinzufügen",
+      "newTaskPlaceholder": "Neue Aufgabe…",
+      "inputA11y": "Aufgabe eingeben",
+      "addButton": "+ Aufgabe hinzufügen",
+      "addButtonA11y": "Aufgabe hinzufügen",
+      "addButtonHint": "Du kannst {{remaining}} weitere Aufgabe hinzufügen",
+      "addButtonHintPlural": "Du kannst {{remaining}} weitere Aufgaben hinzufügen",
+      "completed": "erledigt",
+      "notCompleted": "nicht erledigt"
+    },
+    "energySelector": {
+      "label": "Wie ist deine Energie?",
+      "levels": {
+        "veryLow": "Sehr niedrig",
+        "low": "Niedrig",
+        "ok": "OK",
+        "good": "Gut",
+        "great": "Großartig"
+      },
+      "accessibilityLabel": "Energielevel wählen",
+      "accessibilityHint": "Wähle dein aktuelles Energielevel aus 5 Optionen"
+    },
+    "progress": {
+      "tasksCompleted": "{{completed}} von {{total}} Aufgaben erledigt",
+      "doneLabel": "{{done}} von {{total}} erledigt",
+      "allDone": "\uD83C\uDF89 Alles erledigt!",
+      "accessibilityLabel": "Fortschrittsanzeige",
+      "accessibilityHint": "{{completed}} von {{total}} Aufgaben sind abgehakt"
+    }
+  },
+  "reflect": {
+    "title": "Reflektieren",
+    "subtitle": "Ein Moment, um den Tag mit Absicht zu beenden.",
+    "sections": {
+      "energy": "WIE IST DEINE ENERGIE HEUTE?",
+      "reflection": "WIE WAR DEIN TAG?"
+    },
+    "energySelector": {
+      "levels": {
+        "veryLow": "😴 Sehr niedrig",
+        "low": "😕 Niedrig",
+        "ok": "😊 OK",
+        "good": "😄 Gut",
+        "great": "✨ Großartig"
+      }
+    },
+    "reflectionInput": {
+      "placeholder": "Was lief gut? Was würdest du anders machen?\nAuch ein Satz zählt.",
+      "accessibilityLabel": "Reflexionstext",
+      "accessibilityHint": "Schreibe eine kurze Notiz, wie dein Tag verlaufen ist"
+    },
+    "focusSummary": {
+      "label": "DEIN FOKUS WAR",
+      "accessibilityLabel": "Zusammenfassung des heutigen Fokus"
+    },
+    "saveButton": {
+      "text": "Reflexion speichern",
+      "savedText": "✓ Gespeichert",
+      "accessibilityLabel": "Reflexion speichern",
+      "accessibilityHint": "Speichere deine Reflexion für heute",
+      "disabledHint": "Füge eine Reflexion hinzu oder passe dein Energielevel an, um zu speichern"
+    }
+  },
+  "overview": {
+    "title": "Diese Woche",
+    "subtitle": "Deine letzten 7 Tage auf einen Blick.",
+    "stats": {
+      "tasksDone": "Aufgaben erledigt",
+      "daysWithFocus": "Tage mit Fokus",
+      "reflections": "Reflexionen",
+      "tasksDoneA11y": "{{count}} Aufgaben diese Woche abgeschlossen",
+      "daysWithFocusA11y": "{{count}} Tage mit gesetztem Fokusziel",
+      "reflectionsA11y": "{{count}} Tage mit geschriebener Reflexion"
+    },
+    "columnHeaders": {
+      "date": "Datum",
+      "tasks": "Aufgaben",
+      "energy": "⚡",
+      "energyLabel": "Energie",
+      "reflection": "📝",
+      "reflectionLabel": "Notiz"
+    },
+    "weekDayRow": {
+      "today": "Heute",
+      "accessibilityLabel": "{{date}}: {{completed}} von {{total}} Aufgaben, Energie: {{energy}}, {{reflection}}",
+      "noReflection": "Keine Reflexion"
+    }
+  },
+  "taskItem": {
+    "taskLabel": "Aufgabe: {{text}}",
+    "toggleHint": "Doppel-Tippen zum Umschalten",
+    "editLabel": "Aufgabentext bearbeiten",
+    "editHint": "Doppel-Tippen zum Bearbeiten",
+    "deleteLabel": "Aufgabe löschen: {{text}}"
+  },
+  "tabs": {
+    "home": "Heute",
+    "reflect": "Reflexion",
+    "overview": "Diese Woche"
+  },
+  "explore": {
+    "title": "Erkunden",
+    "subtitle": "Über NextStep erfahren."
+  },
+  "a11y": {
+    "nextStepBrand": "NextStep Logo und Branding",
+    "tabBarHome": "Start",
+    "tabBarReflect": "Reflektieren",
+    "tabBarOverview": "Wochenübersicht",
+    "dateLabel": "{{date}}",
+    "keyboard": {
+      "return": "Bestätigen",
+      "done": "Fertig"
+    }
+  }
+}

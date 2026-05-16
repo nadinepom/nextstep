@@ -1,0 +1,153 @@
+{
+  "common": {
+    "brandName": "NextStep",
+    "appName": "NextStep - Daily Planner"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "Your focus for the day starts now.",
+    "tagline": "Small steps. Clear days.",
+    "dateAccessibility": "Today is {{date}}",
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "night": "Good night"
+    },
+    "sections": {
+      "focus": "TODAY'S FOCUS",
+      "tasks": "TASKS",
+      "tasksWithProgress": "TASKS · {{done}}/{{total}} done",
+      "energy": "YOUR ENERGY",
+      "progress": "PROGRESS"
+    },
+    "focusCard": {
+      "label": "Focus",
+      "placeholder": "What's your main goal today?",
+      "emptyPlaceholder": "What's your one big thing today?",
+      "editLabel": "Edit",
+      "emptyAccessibility": "Today's focus. Tap to set your main goal.",
+      "filledAccessibility": "Today's focus: {{focus}}. Tap to edit.",
+      "editAccessibilityLabel": "Edit today's focus",
+      "accessibilityLabel": "Today's focus card",
+      "accessibilityHint": "Tap to edit your focus goal"
+    },
+    "taskList": {
+      "label": "Tasks",
+      "placeholder": "Up to 3 tasks...",
+      "emptyHint": "Add up to 3 tasks for today",
+      "newTaskPlaceholder": "New task…",
+      "inputA11y": "Enter new task",
+      "addButton": "+ Add a task",
+      "addButtonA11y": "Add a task",
+      "addButtonHint": "You can add {{remaining}} more task",
+      "addButtonHintPlural": "You can add {{remaining}} more tasks",
+      "completed": "completed",
+      "notCompleted": "not completed"
+    },
+    "energySelector": {
+      "label": "How's your energy?",
+      "levels": {
+        "veryLow": "Very low",
+        "low": "Low",
+        "ok": "OK",
+        "good": "Good",
+        "great": "Great"
+      },
+      "accessibilityLabel": "Energy level selector",
+      "accessibilityHint": "Choose your current energy level from 5 options"
+    },
+    "progress": {
+      "tasksCompleted": "{{completed}} of {{total}} tasks completed",
+      "doneLabel": "{{done}} of {{total}} done",
+      "allDone": "\uD83C\uDF89 All done!",
+      "accessibilityLabel": "Progress indicator",
+      "accessibilityHint": "{{completed}} of {{total}} tasks are checked off"
+    }
+  },
+  "reflect": {
+    "title": "Reflect",
+    "subtitle": "A moment to close the day with intention.",
+    "sections": {
+      "energy": "HOW'S YOUR ENERGY TODAY?",
+      "reflection": "HOW DID TODAY GO?"
+    },
+    "energySelector": {
+      "levels": {
+        "veryLow": "😴 Very low",
+        "low": "😕 Low",
+        "ok": "😊 OK",
+        "good": "😄 Good",
+        "great": "✨ Great"
+      }
+    },
+    "reflectionInput": {
+      "placeholder": "What went well? What would you do differently?\nEven one sentence counts.",
+      "accessibilityLabel": "Daily reflection text area",
+      "accessibilityHint": "Write a short note about how today went"
+    },
+    "focusSummary": {
+      "label": "TODAY'S FOCUS WAS",
+      "accessibilityLabel": "Summary of today's focus goal"
+    },
+    "saveButton": {
+      "text": "Save Reflection",
+      "savedText": "✓ Saved",
+      "accessibilityLabel": "Save reflection",
+      "accessibilityHint": "Save your reflection for today",
+      "disabledHint": "Add a reflection or adjust your energy to save"
+    }
+  },
+  "overview": {
+    "title": "This Week",
+    "subtitle": "Your last 7 days at a glance.",
+    "stats": {
+      "tasksDone": "Tasks done",
+      "daysWithFocus": "Days with focus",
+      "reflections": "Reflections",
+      "tasksDoneA11y": "{{count}} tasks completed this week",
+      "daysWithFocusA11y": "{{count}} days with a focus goal set",
+      "reflectionsA11y": "{{count}} days with a reflection written"
+    },
+    "columnHeaders": {
+      "date": "Date",
+      "tasks": "Tasks",
+      "energy": "⚡",
+      "energyLabel": "Energy",
+      "reflection": "📝",
+      "reflectionLabel": "Note"
+    },
+    "weekDayRow": {
+      "today": "Today",
+      "accessibilityLabel": "{{date}}: {{completed}} of {{total}} tasks, Energy: {{energy}}, {{reflection}}",
+      "noReflection": "No reflection"
+    }
+  },
+  "taskItem": {
+    "taskLabel": "Task: {{text}}",
+    "toggleHint": "Double-tap to toggle completion",
+    "editLabel": "Edit task text",
+    "editHint": "Double-tap to edit this task",
+    "deleteLabel": "Delete task: {{text}}"
+  },
+  "tabs": {
+    "home": "Home",
+    "reflect": "Reflect",
+    "overview": "This Week"
+  },
+  "explore": {
+    "title": "Explore",
+    "subtitle": "Learn about NextStep."
+  },
+  "a11y": {
+    "nextStepBrand": "NextStep logo and branding",
+    "tabBarHome": "Home",
+    "tabBarReflect": "Reflect",
+    "tabBarOverview": "Weekly overview",
+    "dateLabel": "{{date}}",
+    "keyboard": {
+      "return": "Submit",
+      "done": "Done"
+    }
+  }
+}

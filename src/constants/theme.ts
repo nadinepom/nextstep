@@ -1,26 +1,34 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
-import '@/global.css';
-
 import { Platform } from 'react-native';
+
+/** Raw NextStep brand palette. */
+export const Brand = {
+  orange: '#C8742A',
+  orangeLight: '#D4894A', // softer for dark mode
+  gold: '#C9A500', // warm gold/yellow (WCAG AA accessible with offWhite & darkOlive)
+  lightGreen: '#B8C99D',
+  sand: '#E7D8C9',
+  offWhite: '#FAF8F3',
+  darkOlive: '#4B4A3F',
+  oliveMid: '#7A7869',
+  oliveDark: '#2A2923',
+} as const;
 
 export const Colors = {
   light: {
-    text: '#000000',
-    background: '#ffffff',
-    backgroundElement: '#F0F0F3',
-    backgroundSelected: '#E0E1E6',
-    textSecondary: '#60646C',
+    text: Brand.darkOlive,
+    background: Brand.offWhite,
+    backgroundElement: Brand.sand,
+    backgroundSelected: Brand.lightGreen,
+    textSecondary: Brand.oliveMid,
+    accent: Brand.orange,
   },
   dark: {
-    text: '#ffffff',
-    background: '#000000',
-    backgroundElement: '#212225',
-    backgroundSelected: '#2E3135',
-    textSecondary: '#B0B4BA',
+    text: Brand.offWhite,
+    background: Brand.oliveDark,
+    backgroundElement: '#35342E',
+    backgroundSelected: Brand.darkOlive,
+    textSecondary: Brand.lightGreen,
+    accent: Brand.orangeLight,
   },
 } as const;
 
