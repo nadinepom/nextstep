@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81 60" width="81" height="60" fill="none">
+  <!-- Three ascending bars — mirrors Logo.tsx at scale=3 -->
+  <!-- bar 1: height 8*3=24, opacity 0.55 -->
+  <rect x="0" y="36" width="21" height="24" rx="6" fill="#C8742A" opacity="0.55"/>
+  <!-- bar 2: height 14*3=42, opacity 0.78 -->
+  <rect x="30" y="18" width="21" height="42" rx="6" fill="#C8742A" opacity="0.78"/>
+  <!-- bar 3: height 20*3=60, opacity 1.0 -->
+  <rect x="60" y="0"  width="21" height="60" rx="6" fill="#C8742A"/>
+</svg>

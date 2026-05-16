@@ -1,6 +1,29 @@
-# NextStep
+<div align="center">
+  <img src="./assets/images/logo.svg" alt="NextStep Logo" width="54" />
 
-> **Small steps. Clear days.**
+  # NextStep
+
+  **Small steps. Clear days.**
+
+  A minimal daily planner for iOS, Android and Web — built with Expo & React Native.
+
+  ![Expo](https://img.shields.io/badge/Expo-SDK%2055-black?logo=expo) ![React Native](https://img.shields.io/badge/React%20Native-0.83-blue?logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue?logo=typescript) ![NativeWind](https://img.shields.io/badge/NativeWind-v4-38bdf8?logo=tailwindcss) ![i18n](https://img.shields.io/badge/i18n-EN%20%7C%20DE-green)
+
+</div>
+
+---
+
+## Screenshots
+
+<!-- Add simulator/device screenshots here.
+     Recommended: run the app in the iOS Simulator, take screenshots with Cmd+S,
+     and save them to docs/screenshots/. Then replace the table below. -->
+
+| Home | Reflect | This Week |
+|:---:|:---:|:---:|
+| *coming soon* | *coming soon* | *coming soon* |
+
+---
 
 A polished React Native day-planning app built with Expo, TypeScript, NativeWind, and Expo Router. NextStep helps users stay grounded with one daily focus, up to three tasks, an energy check-in, and a short reflection — all persisted locally with no account needed.
 
@@ -148,35 +171,50 @@ src/utils/__tests__/date.test.ts
   - todayKey matches new Date()
   - lastNDays(7) returns exactly 7 entries, oldest first
   - isToday returns true for today's key
-  - formatDateLabel formats correctly
+  - formatDateLabel('2026-05-13', 'en') → "Wed, May 13"
+  - formatDateLabel('2026-05-13', 'de') → "Mi., 13. Mai"
+  - shortWeekday('2026-05-13', 'en') → "Wed"
+  - shortWeekday('2026-05-13', 'de') → "Mi."
+  - timeGreetingKey returns 'home.greeting.morning' for hour 9
+  - timeGreetingKey returns 'home.greeting.night' for hour 2
 
 src/utils/__tests__/plan.test.ts
-  - addTask adds a task; respects MAX_TASKS limit
-  - toggleTask flips completed state
-  - removeTask removes by id
-  - updateTaskText trims whitespace; removes task if text is empty
+  - createEmptyPlan returns empty tasks, null energy, empty focus and reflection
+  - addTask appends a task with unique id and completed: false
+  - addTask does not exceed MAX_TASKS limit
+  - toggleTask flips completed state; leaves other tasks unchanged
+  - removeTask removes task by id; leaves other tasks unchanged
+  - updateTaskText updates text for matching id
+  - updateFocus returns plan with updated focus string
+  - updateEnergy returns plan with updated energy level
+  - updateReflection returns plan with updated reflection string
   - completedCount counts only completed tasks
   - planProgress returns 0 with no tasks; correct fraction otherwise
-  - createEmptyPlan returns sensible defaults
 ```
 
 ### Integration tests (with React Testing Library)
 
+Component tests require i18next to be mocked. Add a test setup file that initialises i18next with the English fixture translations before each test.
+
 ```
 src/components/__tests__/TaskItem.test.tsx
   - renders task text
-  - pressing circle calls onToggle
-  - pressing × calls onDelete
-  - completed task has strikethrough style
+  - pressing the circle calls onToggle with correct id
+  - pressing × calls onDelete with correct id
+  - completed task has line-through style and muted color
+  - edit mode: blurring the TextInput calls onUpdateText
 
 src/components/__tests__/EnergySelector.test.tsx
   - renders all 5 levels
-  - pressing a level calls onChange with correct EnergyLevel
-  - selected level has correct accessibilityState
+  - pressing a level calls onChange with the correct EnergyLevel (1–5)
+  - selected level has accessibilityState.selected = true
+  - unselected levels have accessibilityState.selected = false
 
 src/storage/__tests__/DayPlanContext.test.tsx
-  - useTodayPlan returns loading:true initially
-  - updatePlan updates state and calls AsyncStorage.setItem
+  - useTodayPlan returns loading: true initially
+  - useTodayPlan resolves plan from AsyncStorage on mount
+  - updatePlan updates state synchronously and persists to AsyncStorage
+  - useWeekPlans returns plans for the last 7 days
 ```
 
 ---
